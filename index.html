@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quadros</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <h1>Quadros</h1>
+      <button id="newBoard">+ Novo Quadro</button>
+      <ul id="boardList"></ul>
+    </aside>
+    <main id="main">
+      <div id="toolbar">
+        <span id="boardTitle"></span>
+      </div>
+      <div id="canvasContainer">
+        <div id="world"></div>
+      </div>
+    </main>
+  </div>
+  <script src="https://unpkg.com/dexie@3/dist/dexie.js"></script>
+  <script src="src/db.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
